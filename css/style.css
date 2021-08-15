@@ -1,0 +1,279 @@
+/* hsl(25, 100%, 50%) */
+
+:root {
+    --hue-color: 25;
+    --first-color: hsl(var(--hue-color), 100%, 50%);
+    --first-color-alt: hsl(var(--hue-color), 75%, 55%);
+    --first-color-lighter: hsl(var(--hue-color), 90%, 70%);
+    --title-color: hsl(var(--hue-color), 8%, 0%);
+    --text-color: hsl(var(--hue-color), 8%, 0%);
+    --text-color-light: hsl(var(--hue-color), 8%, 100%);
+    --input-color: hsl(var(--hue-color), 70%, 35%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: hsl(var(--hue-color), 60%, 99%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-up {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: var(--first-color);
+    color: #fff;
+    z-index: 999;
+    opacity: 0;
+}
+
+.show-btn {
+    opacity: 1;
+    transition: 0.5;
+}
+
+.navbar {
+    background-color: var(--first-color);
+    color: var(--text-color);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: var(--first-color-lighter);
+    text-decoration: none;
+}
+
+.navbar-toggler-icon,
+.navbar-toggler {
+    z-index: 9999;
+}
+
+#Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--first-color);
+}
+
+.Header-title {
+    margin-bottom: 25px;
+}
+
+.Header-subtitle {
+    margin-bottom: 20px;
+}
+
+.input-group-text {
+    color: #fff;
+    background-color: #ff2b00;
+    border: none;
+}
+
+.about-title {
+    margin-bottom: 4rem;
+}
+
+.about-text {
+    margin-bottom: 3rem;
+}
+
+.fa-signal {
+    font-size: 13rem;
+    color: var(--first-color);
+}
+
+#tnt {
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+.tnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.tnt-icon {
+    font-size: 5.5rem;
+    color: var(--first-color);
+    margin-bottom: 10px;
+}
+
+.tnt-text {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.section-title {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group .form-control {
+    border: 1px solid #000;
+}
+
+.contact-info p {
+    font-size: 1.5rem;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-info-title {
+    font-size: 1.75rem;
+}
+
+.contact-info-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-info-title a i {
+    margin-right: 10px;
+}
+
+.value-icon {
+    text-align: center;
+}
+
+.value-icon i {
+    font-size: 20rem;
+    color: var(--first-color);
+}
+
+.value-title {
+    font-size: 2rem;
+}
+
+.value-title,
+.value-text {
+    margin-bottom: 3rem;
+}
+
+.value-text,
+.value-text-2,
+.value-text b,
+.value-text-2 b {
+    font-size: 1.25rem;
+}
+
+.services-title h2 {
+    font-size: 2rem;
+}
+
+.services-title p {
+    font-size: 1.4rem;
+}
+
+.potrfolio-gallery {
+    border: 1px solid #000;
+    box-shadow: 40px 40px 0px 0px var(--first-color);
+}
+
+.pricing-card {
+    border: none;
+    box-shadow: 5px 5px 10px 0px #000;
+}
+
+.portfolio-card {
+    border: none;
+    margin: 0%;
+    padding: 0;
+}
+
+.portfolio-card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-overlay {
+    text-align: center;
+}
+
+.portfolio-card .card-img-overlay .portfolio-btn {
+    background-color: var(--first-color);
+}
+
+.portfolio-card .card-img-overlay .portfolio-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.portfolio-card .card-img-overlay .portfolio-btn,
+.portfolio-card .card-img-overlay .portfolio-card-title,
+.portfolio-card .card-img-overlay .portfolio-card-text {
+    opacity: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-img-overlay .my-name {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.portfolio-card:hover .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-card:hover .card-img-overlay .portfolio-btn,
+.portfolio-card:hover .card-img-overlay .portfolio-card-title,
+.portfolio-card:hover .card-img-overlay .portfolio-card-text {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.portfolio-col {
+    padding: 0;
+    margin: 0;
+}
+
+.power-maya {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 10px;
+}
+
+#Header,
+#about,
+#value,
+#services,
+#portfolio,
+#pricing,
+#contact {
+    padding: 5rem 1.5rem;
+}
+
+#portfolio,
+#value,
+#contact {
+    background-color: #b5b4b4;
+}
